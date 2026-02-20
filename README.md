@@ -10,6 +10,10 @@ npx skills add https://github.com/reyronald/skills --skill proof-reading
 npx skills add https://github.com/reyronald/skills --skill leetcode-teaching
 ```
 
+```sh
+npx skills add https://github.com/reyronald/skills --skill code-review
+```
+
 ## Resources
 
 - https://agentskills.io

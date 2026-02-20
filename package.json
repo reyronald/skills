@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "scripts": {
+    "init": "node init.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0"
+  }
+}
