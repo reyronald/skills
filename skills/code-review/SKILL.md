@@ -1,6 +1,7 @@
 ---
 name: code-review
 description: A skill for performing code reviews, providing feedback on code quality, style, and best practices on both local development branches and GitHub pull requests.
+compatibility: Requires git and/or and access to the internet
 metadata:
   author: Ronald Rey
   version: "1.0"
