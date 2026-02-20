@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync, existsSync } from "node:fs";
+import { mkdirSync, writeFileSync, existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
 const skillName = process.argv[2];
@@ -49,6 +49,20 @@ npx skills add https://github.com/reyronald/skills --skill ${skillName}
 mkdirSync(skillDir, { recursive: true });
 writeFileSync(join(skillDir, "SKILL.md"), skillMdContent, "utf-8");
 writeFileSync(join(skillDir, "README.md"), readmeMdContent, "utf-8");
+
+const rootReadmePath = join(process.cwd(), "README.md");
+const rootReadme = readFileSync(rootReadmePath, "utf-8");
+const installBlock = `\`\`\`sh\nnpx skills add https://github.com/reyronald/skills --skill ${skillName}\n\`\`\`\n`;
+const resourcesMarker = "## Resources";
+const insertAt = rootReadme.indexOf(resourcesMarker);
+const updatedReadme =
+  insertAt === -1
+    ? rootReadme + "\n" + installBlock
+    : rootReadme.slice(0, insertAt) +
+      installBlock +
+      "\n" +
+      rootReadme.slice(insertAt);
+writeFileSync(rootReadmePath, updatedReadme, "utf-8");
 
 console.log(`✅ Created skills/${skillName}`);
 console.log();
