@@ -3,15 +3,15 @@
 A collection of skills I've written and use regularly.
 
 ```sh
-npx skills add https://github.com/reyronald/skills --skill proof-reading
+npx skills add reyronald/skills --skill proof-reading
 ```
 
 ```sh
-npx skills add https://github.com/reyronald/skills --skill leetcode-teaching
+npx skills add reyronald/skills --skill leetcode-teaching
 ```
 
 ```sh
-npx skills add https://github.com/reyronald/skills --skill code-review
+npx skills add reyronald/skills --skill code-review
 ```
 
 ## Resources

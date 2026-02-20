@@ -1,5 +1,5 @@
 # code-review
 
 ```sh
-npx skills add https://github.com/reyronald/skills --skill code-review
+npx skills add reyronald/skills --skill code-review
 ```

@@ -42,7 +42,7 @@ metadata:
 const readmeMdContent = `# ${skillName}
 
 \`\`\`sh
-npx skills add https://github.com/reyronald/skills --skill ${skillName}
+npx skills add reyronald/skills --skill ${skillName}
 \`\`\`
 `;
 
@@ -52,7 +52,7 @@ writeFileSync(join(skillDir, "README.md"), readmeMdContent, "utf-8");
 
 const rootReadmePath = join(process.cwd(), "README.md");
 const rootReadme = readFileSync(rootReadmePath, "utf-8");
-const installBlock = `\`\`\`sh\nnpx skills add https://github.com/reyronald/skills --skill ${skillName}\n\`\`\`\n`;
+const installBlock = `\`\`\`sh\nnpx skills add reyronald/skills --skill ${skillName}\n\`\`\`\n`;
 const resourcesMarker = "## Resources";
 const insertAt = rootReadme.indexOf(resourcesMarker);
 const updatedReadme =
