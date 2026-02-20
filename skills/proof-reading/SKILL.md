@@ -1,9 +1,10 @@
 ---
 name: proof-reading
-description: Reviews and proofreads blog posts, articles, documentation, communications, emails, and any other write-ups to provide suggestions on how to improve conciseness, legibility, clarity, tone, and more. Fixes typos, mistakes, redundancies, and grammar issues.
+description: Reviews and proofreads blog posts, articles, documentation, communications, emails, and any other write-ups to improve conciseness, legibility, clarity, and tone. Fixes typos, grammar issues, redundancies, run-on sentences, and punctuation errors. Use when the user asks to proofread, review, edit, or improve a piece of writing, or when they share text and ask for feedback, corrections, or a revised version.
 metadata:
   author: Ronald Rey
   version: "1.0"
+  date: 2026-02-20
 ---
 
 # Proof Reading
