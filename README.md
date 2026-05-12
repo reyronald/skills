@@ -14,6 +14,10 @@ npx skills add reyronald/skills --skill leetcode-teaching
 npx skills add reyronald/skills --skill code-review
 ```
 
+```sh
+npx skills add reyronald/skills --skill dependabot-fix
+```
+
 ## Resources
 
 - https://claude.com/blog/skills
