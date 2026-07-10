@@ -18,6 +18,10 @@ npx skills add reyronald/skills --skill code-review
 npx skills add reyronald/skills --skill dependabot-fix
 ```
 
+```sh
+npx skills add reyronald/skills --skill pr
+```
+
 ## Resources
 
 - https://claude.com/blog/skills
